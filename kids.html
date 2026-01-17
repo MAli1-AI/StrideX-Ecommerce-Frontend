@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrideX | Kids' Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">StrideX</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <div class="search-container">
+                <button id="search-toggle" class="search-icon">🔍</button>
+                <div id="search-dropdown" class="search-dropdown-content">
+                    <h4>Shop by Category</h4>
+                    <div class="category-links">
+                        <div class="category-group">
+                            <strong>MEN</strong>
+                            <a href="men.html#sneakers">Sneakers</a>
+                            <a href="men.html#boots">Boots</a>
+                            <a href="men.html#joggers">Joggers</a>
+                            <a href="men.html#running">Running Shoes</a>
+                        </div>
+                        <div class="category-group">
+                            <strong>WOMEN</strong>
+                            <a href="women.html#sneakers">Sneakers</a>
+                        </div>
+                        <div class="category-group">
+                            <strong>KIDS</strong>
+                            <a href="kids.html#sneakers">Sneakers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery fade-in">
+            <h2>Kids' Collection</h2>
+
+            <div class="category-section" id="sneakers">
+                <h3>Sneakers</h3>
+                <div class="product-grid">
+                    <div class="product-card neon-glow" data-product-id="K1">
+                        <div class="image-wrapper">
+                            <img src="images/kid shoe1.jpg" alt="StrideX Play">
+                        </div>
+                        <h3>StrideX Play</h3>
+                        <p>**$90.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('K1', 'StrideX Play', 90.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="K2">
+                        <div class="image-wrapper">
+                            <img src="images/kid shoe2.jpg" alt="StrideX Zoom">
+                        </div>
+                        <h3>StrideX Zoom</h3>
+                        <p class="price-old">$110.00</p>
+                        <p class="price-new">**$77.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('K2', 'StrideX Zoom', 77.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="K3">
+                        <div class="image-wrapper">
+                            <img src="images/kid shoe3.jpg" alt="StrideX Mini">
+                        </div>
+                        <h3>StrideX Mini</h3>
+                        <p>**$85.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('K3', 'StrideX Mini', 85.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="K4">
+                        <div class="image-wrapper">
+                            <img src="images/kid shoe4.jpg" alt="StrideX Fun">
+                        </div>
+                        <h3>StrideX Fun</h3>
+                        <p>**$95.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('K4', 'StrideX Fun', 95.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="K5">
+                        <div class="image-wrapper">
+                            <img src="images/kid shoe5.jpg" alt="StrideX Star">
+                        </div>
+                        <h3>StrideX Star</h3>
+                        <p>**$105.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('K5', 'StrideX Star', 105.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 StrideX. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

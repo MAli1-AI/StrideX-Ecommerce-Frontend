@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrideX | Men's Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">StrideX</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+           <a href="login.html">Login</a>
+            <div class="search-container">
+                <button id="search-toggle" class="search-icon">🔍</button>
+                <div id="search-dropdown" class="search-dropdown-content">
+                    <h4>Shop by Category</h4>
+                    <div class="category-links">
+                        <div class="category-group">
+                            <strong>MEN</strong>
+                            <a href="men.html#sneakers">Sneakers</a>
+                            <a href="men.html#boots">Boots</a>
+                            <a href="men.html#joggers">Joggers</a>
+                            <a href="men.html#running">Running Shoes</a>
+                        </div>
+                        <div class="category-group">
+                            <strong>WOMEN</strong>
+                            <a href="women.html#sneakers">Sneakers</a>
+                        </div>
+                        <div class="category-group">
+                            <strong>KIDS</strong>
+                            <a href="kids.html#sneakers">Sneakers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery fade-in">
+            <h2>Men's Collection</h2>
+
+            <div class="category-section" id="sneakers">
+                <h3>Sneakers</h3>
+                <div class="product-grid">
+                    <div class="product-card neon-glow" data-product-id="M1">
+                        <div class="image-wrapper">
+                            <img src="images/men sneakers1.jpg" alt="StrideX Classic">
+                        </div>
+                        <h3>StrideX Classic</h3>
+                        <p>**$140.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M1', 'StrideX Classic', 140.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M2">
+                        <div class="image-wrapper">
+                            <img src="images/men sneakers2.jpg" alt="StrideX Volt">
+                        </div>
+                        <h3>StrideX Volt</h3>
+                        <p>**$175.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M2', 'StrideX Volt', 175.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M3">
+                        <div class="image-wrapper">
+                            <img src="images/men sneakers3.jpg" alt="StrideX Prime">
+                        </div>
+                        <h3>StrideX Prime</h3>
+                        <p class="price-old">$190.00</p>
+                        <p class="price-new">**$133.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M3', 'StrideX Prime', 133.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M4">
+                        <div class="image-wrapper">
+                            <img src="images/men sneakers4.jpg" alt="StrideX Stealth">
+                        </div>
+                        <h3>StrideX Stealth</h3>
+                        <p>**$210.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M4', 'StrideX Stealth', 210.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M5">
+                        <div class="image-wrapper">
+                            <img src="images/men sneakers5.jpg" alt="StrideX Pulse">
+                        </div>
+                        <h3>StrideX Pulse</h3>
+                        <p>**$160.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M5', 'StrideX Pulse', 160.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-section" id="boots">
+                <h3>Boots</h3>
+                <div class="product-grid">
+                    <div class="product-card neon-glow" data-product-id="M6">
+                        <div class="image-wrapper">
+                            <img src="images/men boots1.jpg" alt="StrideX Trekker">
+                        </div>
+                        <h3>StrideX Trekker</h3>
+                        <p>**$250.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M6', 'StrideX Trekker', 250.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M7">
+                        <div class="image-wrapper">
+                            <img src="images/men boots2.jpg" alt="StrideX Ranger">
+                        </div>
+                        <h3>StrideX Ranger</h3>
+                        <p class="price-old">$280.00</p>
+                        <p class="price-new">**$196.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M7', 'StrideX Ranger', 196.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M8">
+                        <div class="image-wrapper">
+                            <img src="images/men boots3.jpg" alt="StrideX Hiker">
+                        </div>
+                        <h3>StrideX Hiker</h3>
+                        <p>**$230.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M8', 'StrideX Hiker', 230.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M9">
+                        <div class="image-wrapper">
+                            <img src="images/men boots4.jpg" alt="StrideX Apex">
+                        </div>
+                        <h3>StrideX Apex</h3>
+                        <p>**$310.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M9', 'StrideX Apex', 310.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M10">
+                        <div class="image-wrapper">
+                            <img src="images/men boots5.jpg" alt="StrideX Guard">
+                        </div>
+                        <h3>StrideX Guard</h3>
+                        <p>**$265.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M10', 'StrideX Guard', 265.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-section" id="joggers">
+                <h3>Joggers</h3>
+                <div class="product-grid">
+                    <div class="product-card neon-glow" data-product-id="M11">
+                        <div class="image-wrapper">
+                            <img src="images/men jog1.jpg" alt="StrideX Breeze">
+                        </div>
+                        <h3>StrideX Breeze</h3>
+                        <p>**$135.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M11', 'StrideX Breeze', 135.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M12">
+                        <div class="image-wrapper">
+                            <img src="images/men jog2.jpg" alt="StrideX Glide">
+                        </div>
+                        <h3>StrideX Glide</h3>
+                        <p class="price-old">$170.00</p>
+                        <p class="price-new">**$119.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M12', 'StrideX Glide', 119.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M13">
+                        <div class="image-wrapper">
+                            <img src="images/men jog3.jpg" alt="StrideX Speed">
+                        </div>
+                        <h3>StrideX Speed</h3>
+                        <p>**$150.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M13', 'StrideX Speed', 150.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M14">
+                        <div class="image-wrapper">
+                            <img src="images/men jog4.jpg" alt="StrideX Pacer">
+                        </div>
+                        <h3>StrideX Pacer</h3>
+                        <p>**$145.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M14', 'StrideX Pacer', 145.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M15">
+                        <div class="image-wrapper">
+                            <img src="images/men jog5.jpg" alt="StrideX Flow">
+                        </div>
+                        <h3>StrideX Flow</h3>
+                        <p>**$125.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M15', 'StrideX Flow', 125.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-section" id="running">
+                <h3>Running Shoes</h3>
+                <div class="product-grid">
+                    <div class="product-card neon-glow" data-product-id="M16">
+                        <div class="image-wrapper">
+                            <img src="images/men run1.jpg" alt="StrideX Dash">
+                        </div>
+                        <h3>StrideX Dash</h3>
+                        <p>**$195.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M16', 'StrideX Dash', 195.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M17">
+                        <div class="image-wrapper">
+                            <img src="images/men run2.jpg" alt="StrideX Boost">
+                        </div>
+                        <h3>StrideX Boost</h3>
+                        <p>**$215.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M17', 'StrideX Boost', 215.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M18">
+                        <div class="image-wrapper">
+                            <img src="images/men run3.jpg" alt="StrideX Sprint">
+                        </div>
+                        <h3>StrideX Sprint</h3>
+                        <p class="price-old">$240.00</p>
+                        <p class="price-new">**$168.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M18', 'StrideX Sprint', 168.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M19">
+                        <div class="image-wrapper">
+                            <img src="images/men run4.jpg" alt="StrideX Ultra">
+                        </div>
+                        <h3>StrideX Ultra</h3>
+                        <p>**$260.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M19', 'StrideX Ultra', 260.00)">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card neon-glow" data-product-id="M20">
+                        <div class="image-wrapper">
+                            <img src="images/men run5.jpg" alt="StrideX Pro">
+                        </div>
+                        <h3>StrideX Pro</h3>
+                        <p>**$205.00**</p>
+                        <button class="add-to-cart" onclick="addToCart('M20', 'StrideX Pro', 205.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 StrideX. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
